@@ -3,10 +3,34 @@
 header{
     width: 100%;
     display: flex;
+}
+
+.menu{
     justify-content: flex-end;
+    padding: 30px;
 }
 
 header p{
-    /* margin: 5px;
-    padding: 30px; */
+    margin: 10px;
+    padding: 15px;
+}
+
+main{
+    position: relative;
+}
+
+.box::after {
+	content: "";
+	width: calc(100% - 10px);
+	height: calc(100% - 10px);
+	border-image-source: repeating-linear-gradient(45deg, #FF8800 0, #FF8800 2px, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0) 6px);
+	border-width: 15px;
+	border-image-slice: 20;
+	border-image-repeat: round;
+	border-style: solid;
+	position: absolute;
+	z-index: 1;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
 }
