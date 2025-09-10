@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>rewrite LP</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
 </head>
 <body>
     <header>
@@ -29,6 +30,7 @@
         <div class="question">
             <h1>働きたい、でもこんなお悩みありませんか？</h1>
         </div>
+        <div class="question_list">
         <div class="container">
             <img src="trouble_man_simple-1.png" width="300px">
 
@@ -36,6 +38,7 @@
             <div class="thought bottom-left">IT未経験</div>
             <div class="thought top-right">仕事が長く続かない</div>
             <div class="thought bottom-right">離職してから<br>ブランクがある</div>
+        </div>
         </div>
     </div>
     <div class="service">
@@ -84,6 +87,144 @@
       </div>
     </div>
   </div>
-    
+  <div class="skill">
+    <h1>スキル・資格支援</h1>
+    <section>
+      <h2>IT系スキル</h2>
+      <ul>
+        <li>プログラミング（HTML、CSSなど）</li>
+        <li>Web開発（WordPress）</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>動画編集スキル</h2>
+      <ul>
+        <li>Adobe Premiere Pro</li>
+      </ul>
+    </section>
+
+  <section>
+    <h2>デザインスキル</h2>
+    <ul>
+      <li>Canva</li>
+      <li>Adobe Photoshop</li>
+      <li>Adobe Illustrator</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>事務スキル</h2>
+    <ul>
+      <li>MOS Excel</li>
+      <li>MOS Word</li>
+      <li>MOS PowerPoint</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>資格</h2>
+    <ul>
+      <li>MOSスペシャリスト</li>
+      <li>MOSエキスパート</li>
+      <li>Photoshop検定</li>
+      <li>Illustrator検定</li>
+      <li>ITパスポート試験</li>
+    </ul>
+  </section>
+  </div>
+  <div class="voices">
+    <h1>利用者さんの声</h1>
+      <div class="voice-container">
+        <div class="voice">
+          <div class="voice_icon"></div>
+            <p>テキスト</p>
+        </div>
+        <div class="voice">
+          <div class="voice_icon"></div>
+            <p>テキスト</p>
+        </div>
+      </div>
+  </div>
+  <div class="data">
+    <h1>通所者データ</h1>
+    <img src="スクリーンショット (17).png" width="100%">
+    <p>※グループ会社ランプ浜松の実績より</p>
+  </div>
+  <div class="flow">
+    <h1>利用までの流れ</h1>
+      <div class="steps">
+        <div class="step">お問い合わせ</div>
+        <div class="arrow">→</div>
+        <div class="step">見学・体験</div>
+        <div class="arrow">→</div>
+        <div class="step">利用手続き</div>
+        <div class="arrow">→</div>
+        <div class="step">利用開始</div>
+      </div>
+  </div>
+  <div class="faq-section">
+    <h1>よくある質問</h1>
+    <div class="faq-item">
+      <div class="faq-question">Q. 障害者手帳がなくても通えますか？<span class="plus"></span></div>
+      <div class="faq-answer">はい、医師の診断書があれば障害者手帳は不要です。なお相談時点では診断書がなくてもかまいませんのでお気軽にお問い合わせください。</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-question">Q. 会社を休職中ですが利用できますか？<span class="plus"></span></div>
+      <div class="faq-answer">いくつか条件はございますが会社に籍をおいたまま利用されている方もいます。</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-question">Q. 学校に通いながら通所できますか？<span class="plus"></span></div>
+      <div class="faq-answer">就労移行支援は18歳以上が対象のため、高校在学中に就労移行支援事業所を利用することはできません。在籍中でも体験は可能です。</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-question">Q. アルバイトしながら通えますか？<span class="plus"></span></div>
+      <div class="faq-answer">アルバイトが可能＝すでに就労する能力があるということになり、自治体によっては「利用する必要がない」と判断されることもあります。一度お問い合わせください。</div>
+    </div>
+  </div>
+  <div class="form-container">
+      <h1>お問い合わせフォーム</h1>
+    <form action="#" method="post">
+      <div class="form-row">
+        <div class="form-group">
+          <label for="name">お名前*</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+          <label for="kana">フリガナ</label>
+          <input type="text" id="kana" name="kana">
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label for="email">メールアドレス*</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+          <label for="tel">電話番号</label>
+          <input type="tel" id="tel" name="tel">
+        </div>
+      </div>
+      <div class="form-group full-width">
+        <label for="type">お問い合わせ種別*</label>
+        <input type="text" id="type" name="type" required>
+      </div>
+      <div class="form-group full-width">
+        <label for="subject">件名</label>
+        <input type="text" id="subject" name="subject">
+      </div>
+      <div class="form-group full-width">
+        <label for="message">お問い合わせ内容*</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+      </div>
+      <div class="checkbox">
+        <input type="checkbox" id="agree" name="agree" required>
+        <label for="agree">プライバシーポリシーに同意します *</label>
+      </div>
+      <div class="button">
+        <button type="submit">確認</button>
+      </div>
+    </form>
+  </div>
 </body>
 </html>
