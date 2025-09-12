@@ -6,25 +6,38 @@
     <title>rewrite LP</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
+    
 </head>
 <body>
-    <header>
-        <img src="logo.png" width="150px">
-        <header class="menu">
-            <p>サービス</p>
-            <p>スキル・資格支援</p>
-            <p>利用者さんの声</p>
-            <p>利用までの流れ</p>
-            <p>よくある質問</p>
-            <p>お問い合わせ</p>
-            <p>アクセス</p>
-        </header>
-    </header>
+<header>
+  <img src="img/logo.png" width="150px">
+  <nav class="menu">
+    <p>サービス</p>
+    <p>スキル・資格支援</p>
+    <p>利用者さんの声</p>
+    <p>利用までの流れ</p>
+    <p>よくある質問</p>
+    <p>お問い合わせ</p>
+    <p>アクセス</p>
+  </nav>
+</header>
     <main>
-        <main class="main_img">
-            <img src="IMG_6013.jpg" width="100%">
-            <p class="box"></p>
-        </main>
+<main class="main_img">
+  <div class="slideshow">
+    <img src="img/IMG_6013.jpg" class="slide active" width="100%">
+    <img src="img/IMG_6018.jpg" class="slide" width="100%">
+    <img src="img/IMG_6021.jpg" class="slide" width="100%">
+    <img src="img/IMG_6026.jpg" class="slide" width="100%">
+    <img src="img/室内①.jpg" class="slide" width="100%">
+    <img src="img/北面.jpg" class="slide" width="100%">
+    <img src="img/面談室.jpeg" class="slide" width="100%">
+    <p class="box"></p>
+  </div>
+  
+
+
+
+</main>
     </main>
     <div class="nuv1">
         <div class="question">
@@ -32,7 +45,7 @@
         </div>
         <div class="question_list">
         <div class="container">
-            <img src="trouble_man_simple-1.png" width="300px">
+            <img src="img/trouble_man_simple-1.png" width="300px">
 
             <div class="thought top-left">体調に自信がない</div>
             <div class="thought bottom-left">IT未経験</div>
@@ -49,7 +62,7 @@
       <div class="section-container">
     <div class="card_top-left">
       <div class="icon">
-        <img src="usingcomputer_man_simple.png" class="card_top-left_img">
+        <img src="img/usingcomputer_man_simple.png" class="card_top-left_img">
       </div>
       <div class="text">
         <h2>PCスキルが身につく！</h2>
@@ -59,7 +72,7 @@
 
     <div class="card_top-right">
       <div class="icon">
-        <img src="スクリーンショット (1).png" class="card_top-right_img">
+        <img src="img/スクリーンショット (1).png" class="card_top-right_img">
       </div>
       <div class="text">
         <h2>現役エンジニアが在籍</h2>
@@ -69,7 +82,7 @@
 
     <div class="card_bottom-left">
       <div class="icon">
-        <img src="2414_color.png" class="card_bottom-left_img">
+        <img src="img/2414_color.png" class="card_bottom-left_img">
       </div>
       <div class="text">
         <h2>リモート訓練対応可！</h2>
@@ -79,7 +92,7 @@
 
     <div class="card_bottom-right">
       <div class="icon">
-        <img src="meeting_02_simple.png" class="card_bottom-right_img">
+        <img src="img/meeting_02_simple.png" class="card_bottom-right_img">
       </div>
       <div class="text">
         <h2>職場体験・実習</h2>
@@ -148,20 +161,40 @@
   </div>
   <div class="data">
     <h1>通所者データ</h1>
-    <img src="スクリーンショット (17).png" width="100%">
+    <img src="img/スクリーンショット (17).png" width="100%">
     <p>※グループ会社ランプ浜松の実績より</p>
   </div>
   <div class="flow">
     <h1>利用までの流れ</h1>
-      <div class="steps">
-        <div class="step">お問い合わせ</div>
-        <div class="arrow">→</div>
-        <div class="step">見学・体験</div>
-        <div class="arrow">→</div>
-        <div class="step">利用手続き</div>
-        <div class="arrow">→</div>
-        <div class="step">利用開始</div>
+    <div class="steps">
+      <div class="step-wrap">
+        <div class="step">
+          <img src="img/メールの無料アイコンその8.png" alt="">
+          <p>お問い合わせ</p>
+        </div>
       </div>
+      <div class="arrow">→</div>
+      <div class="step-wrap">
+        <div class="step">
+          <img src="img/ノートPCアイコン.png" alt="">
+          <p>見学・体験</p>
+        </div>
+      </div>
+      <div class="arrow">→</div>
+      <div class="step-wrap">
+        <div class="step">
+          <img src="img/メモアイコン.png" alt="">
+          <p>利用手続き</p>
+        </div>
+      </div>
+      <div class="arrow">→</div>
+      <div class="step-wrap">
+        <div class="step">
+          <img src="img/9614.png" alt="">
+          <p>利用開始</p>
+        </div>
+      </div>
+    </div>
   </div>
   <div class="faq-section">
     <h1>よくある質問</h1>
@@ -182,6 +215,7 @@
       <div class="faq-answer">アルバイトが可能＝すでに就労する能力があるということになり、自治体によっては「利用する必要がない」と判断されることもあります。一度お問い合わせください。</div>
     </div>
   </div>
+  <div class="form">
   <div class="form-container">
       <h1>お問い合わせフォーム</h1>
     <form action="#" method="post">
@@ -224,7 +258,91 @@
       <div class="button">
         <button type="submit">確認</button>
       </div>
+      </div>
     </form>
   </div>
+
+
+
+<div class="access">
+  <div class="access-section">
+    <h1 class="section-title">アクセス</h1>
+    <div class="access-content">
+      <div class="access-info">
+        <h3>所在地</h3>
+        <p>〒430-0926 静岡県浜松市中区砂山町355-1 ナイスビル2F</p>
+
+        <h3>アクセス方法</h3>
+        <ul>
+          <li>JR浜松駅南口から徒歩５分</li>
+          <li>遠州鉄道 新浜松駅から徒歩８分</li>
+        </ul>
+
+        <h3>営業時間</h3>
+        <p>平日 9:00〜18:00（土日祝休み）</p>
+      </div>
+
+      <div class="access-map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d820.0289765375658!2d137.73543807581757!3d34.70225639649552!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x601adf74e4f37c5b%3A0xa0636544716b69e0!2z5bCx5Yq056e76KGM5pSv5o-05LqL5qWt5omAIOODquODqeOCpOODiOOCreODo-ODs-ODkeOCuea1nOadvumnheWNlw!5e0!3m2!1sja!2sjp!4v1757639357126!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer class="site-footer">
+  <div class="footer-container">
+    <!-- 左：会社概要 -->
+    <div class="footer-column">
+      <h3 class="footer-logo">rewrite</h3>
+      <p>
+        株式会社rewriteは、ITに特化した人的支援事業を展開しています。<br>
+        一人ひとりが自らの未来を切り開く社会を実現するために、ITのチカラで地域の未来を支えます。
+      </p>
+    </div>
+
+    <!-- 中左：リンク -->
+    <div class="footer-column">
+      <h4>リンク</h4>
+      <ul>
+        <li><a href="#">ホーム</a></li>
+        <li><a href="#">サービス</a></li>
+        <li><a href="#">スキル・資格支援</a></li>
+        <li><a href="#">利用者さんの声</a></li>
+        <li><a href="#">利用までの流れ</a></li>
+        <li><a href="#">よくある質問</a></li>
+        <li><a href="#">お問い合わせ</a></li>
+        <li><a href="#">アクセス</a></li>
+      </ul>
+    </div>
+
+    <!-- 右：お問い合わせ -->
+    <div class="footer-column">
+      <h4>お問い合わせ</h4>
+      <p>〒430-0926 静岡県浜松市中区砂山町355-1<br>ケイスビル2F</p>
+      <p> 053-401-0004</p>
+      <p><a href="mailto:info@rewrite-co.jp">info@rewrite-co.jp</a></p>
+    </div>
+  </div>
+
+  <!-- コピーライト -->
+  <div class="footer-bottom">
+    <p>&copy; 2025 株式会社rewrite All Rights Reserved.</p>
+  </div>
+</footer>
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const slides = document.querySelectorAll('.slide');
+    let current = 0;
+    const total = slides.length;
+
+    function showNextSlide() {
+      slides[current].classList.remove('active');
+      current = (current + 1) % total;
+      slides[current].classList.add('active');
+    }
+
+    setInterval(showNextSlide, 5000);
+  });
+</script>
 </body>
 </html>
