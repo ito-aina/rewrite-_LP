@@ -118,7 +118,7 @@ main {
 	margin: 20px;
 }
 .service p {
-	margin-top: 30px;
+	margin: 30px;
 	margin-left: 50px;
 	font-size: 24px;
 }
@@ -136,7 +136,6 @@ body {
 
 .text p {
 	font-size: 18px;
-	color: #333;
 }
 
 .section-container {
@@ -152,7 +151,7 @@ body {
 }
 
 .card_top-right_img {
-	width: 300px;
+	width: 200px;
 	margin: 0 auto;
 }
 
@@ -246,13 +245,13 @@ section {
 	box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 	}
 
-h2 {
+.skill_item h2 {
 	color: #ff8c00;
 	border-bottom: 1px solid #ccc;
 	padding-bottom: 5px;
 }
 
-li {
+.skill_item p {
 	font-size: 18px;
 }
 
@@ -345,13 +344,55 @@ li {
 	font-size: 50px;
 }
 
-
-.faq-item {
+.c-accordion__title{
+  position: relative;
+  font-size: 20px;
+  cursor: pointer;
+  padding: 10px 20px;
+  margin-bottom: 0;
+  background-color: #FADBA1;
+}
+.c-accordion__title::before{
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 25px;
+  width: 10px;
+  height: 2px;
+  transform: rotate(90deg);
+  background: #efeeea;
+  transition: all .3s ease-in-out;
+}
+.c-accordion__title::after{
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 25px;
+  /*横線*/
+  width: 10px;
+  height: 2px;
+  background: #efeeea;
+  transition: all .2s ease-in-out;
+}
+/* オープンした時 */
+.c-accordion__title.is-open::before{
+  transform: rotate(135deg);
+}
+.c-accordion__title.is-open::after{
+  transform: rotate(45deg);
+}
+.c-accordion__body{
+  display: none;
+  font-size: 20px;
+  padding: 10px 20px;
+  border: 1px solid #1c273e;
+}
+/* .faq-item {
 	border-bottom: 1px solid #ccc;
 	padding: 15px 0;
-}
+} */
 
-.faq-question {
+/* .faq-question {
 	background: none;
 	border: none;
 	width: 100%;
@@ -363,22 +404,22 @@ li {
 	justify-content: space-between;
 	align-items: center;
 	padding-left: 30px;
-}
-
+} */
+/* 
 .faq-answer {
 	display: none;
 	margin-top: 10px;
 	font-size: 24px;
 	color: #333;
-}
+} */
 
-.faq-item.active .faq-answer {
+/* .faq-item.active .faq-answer {
 	display: block;
 }
 
 .faq-item.active .plus {
 	transform: rotate(45deg);
-}
+} */
 
 
 .form{

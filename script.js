@@ -15,4 +15,3 @@ window.addEventListener('scroll', function () {
     header.style.backgroundColor = 'rgba(255, 255, 255, 1)';
   }
 });
-

@@ -6,7 +6,9 @@
     <title>rewrite LP</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
-    
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+
 </head>
 <body>
 <header>
@@ -21,24 +23,40 @@
     <p>アクセス</p>
   </nav>
 </header>
-    <main>
-<main class="main_img">
-  <div class="slideshow">
-    <img src="img/IMG_6013.jpg" class="slide active" width="100%">
-    <img src="img/IMG_6018.jpg" class="slide" width="100%">
-    <img src="img/IMG_6021.jpg" class="slide" width="100%">
-    <img src="img/IMG_6026.jpg" class="slide" width="100%">
-    <img src="img/室内①.jpg" class="slide" width="100%">
-    <img src="img/北面.jpg" class="slide" width="100%">
-    <img src="img/面談室.jpeg" class="slide" width="100%">
-    <p class="box"></p>
+<main>
+  <div class="sliderArea">
+    <div class="regular slider">
+      <div><img src="img/IMG_6013.jpg" width="100%"></div>
+      <div><img src="img/IMG_6018.jpg" width="100%"></div>
+      <div><img src="img/IMG_6021.jpg" width="100%"></div>
+      <div><img src="img/IMG_6026.jpg" width="100%"></div>
+      <div><img src="img/室内①.jpg" width="100%"></div>
+      <div><img src="img/北面.jpg" width="100%"></div>
+      <div><img src="img/面談室.jpeg" width="100%"></div>
+    </div>
   </div>
-  
-
-
-
 </main>
-    </main>
+
+<!-- jQuery -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<!-- slickのJS -->
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+<!-- slickの初期化 -->
+<script>
+$(function(){
+  $('.regular').slick({
+    autoplay: true,        // 自動再生
+    autoplaySpeed: 3000,   // 3秒ごとに切り替え
+    dots: true,            // ドットナビゲーション
+    arrows: true,          // 前後の矢印
+    infinite: true,        // ループ
+    slidesToShow: 1,       // 表示枚数
+    slidesToScroll: 1      // スクロール枚数
+  });
+});
+</script>
     <div class="nuv1">
         <div class="question">
             <h1>働きたい、でもこんなお悩みありませんか？</h1>
@@ -102,48 +120,38 @@
   </div>
   <div class="skill">
     <h1>スキル・資格支援</h1>
-    <section>
+    <section class="skill_item">
       <h2>IT系スキル</h2>
-      <ul>
-        <li>プログラミング（HTML、CSSなど）</li>
-        <li>Web開発（WordPress）</li>
-      </ul>
+        <p>プログラミング（HTML、CSSなど）</p>
+        <p>Web開発（WordPress）</p>
     </section>
 
-    <section>
+    <section class="skill_item">
       <h2>動画編集スキル</h2>
-      <ul>
-        <li>Adobe Premiere Pro</li>
-      </ul>
+        <p>Adobe Premiere Pro</p>
     </section>
 
-  <section>
+  <section class="skill_item">
     <h2>デザインスキル</h2>
-    <ul>
-      <li>Canva</li>
-      <li>Adobe Photoshop</li>
-      <li>Adobe Illustrator</li>
-    </ul>
+      <p>Canva</p>
+      <p>Adobe Photoshop</p>
+      <p>Adobe Illustrator</p>
   </section>
 
-  <section>
+  <section class="skill_item">
     <h2>事務スキル</h2>
-    <ul>
-      <li>MOS Excel</li>
-      <li>MOS Word</li>
-      <li>MOS PowerPoint</li>
-    </ul>
+      <p>MOS Excel</p>
+      <p>MOS Word</p>
+      <p>MOS PowerPoint</p>
   </section>
 
-  <section>
+  <section class="skill_item">
     <h2>資格</h2>
-    <ul>
-      <li>MOSスペシャリスト</li>
-      <li>MOSエキスパート</li>
-      <li>Photoshop検定</li>
-      <li>Illustrator検定</li>
-      <li>ITパスポート試験</li>
-    </ul>
+      <p>MOSスペシャリスト</p>
+      <p>MOSエキスパート</p>
+      <p>Photoshop検定</p>
+      <p>Illustrator検定</p>
+      <p>ITパスポート試験</p>
   </section>
   </div>
   <div class="voices">
@@ -198,22 +206,37 @@
   </div>
   <div class="faq-section">
     <h1>よくある質問</h1>
-    <div class="faq-item">
-      <div class="faq-question">Q. 障害者手帳がなくても通えますか？<span class="plus"></span></div>
-      <div class="faq-answer">はい、医師の診断書があれば障害者手帳は不要です。なお相談時点では診断書がなくてもかまいませんのでお気軽にお問い合わせください。</div>
+<div class="c-accordion">
+  <div class="c-accordion__item">
+      <h2 class="c-accordion__title js-accordion__title is-open">Q. 障害者手帳がなくても通えますか？</h2>
+      <div class="c-accordion__body js-accordion__body">はい、医師の診断書があれば障害者手帳は不要です。なお相談時点では診断書がなくてもかまいませんのでお気軽にお問い合わせください。</div>
     </div>
-    <div class="faq-item">
-      <div class="faq-question">Q. 会社を休職中ですが利用できますか？<span class="plus"></span></div>
-      <div class="faq-answer">いくつか条件はございますが会社に籍をおいたまま利用されている方もいます。</div>
+    <div class="c-accordion__item">
+      <h2 class="c-accordion__title js-accordion__title">Q. 会社を休職中ですが利用できますか？</h2>
+      <div class="c-accordion__body js-accordion__body">いくつか条件はございますが会社に籍をおいたまま利用されている方もいます。</div>
     </div>
-    <div class="faq-item">
-      <div class="faq-question">Q. 学校に通いながら通所できますか？<span class="plus"></span></div>
-      <div class="faq-answer">就労移行支援は18歳以上が対象のため、高校在学中に就労移行支援事業所を利用することはできません。在籍中でも体験は可能です。</div>
+    <div class="c-accordion__item">
+      <h2 class="c-accordion__title js-accordion__title">Q. 学校に通いながら通所できますか？</h2>
+      <div class="c-accordion__body js-accordion__body">就労移行支援は18歳以上が対象のため、高校在学中に就労移行支援事業所を利用することはできません。在籍中でも体験は可能です。</div>
     </div>
-    <div class="faq-item">
-      <div class="faq-question">Q. アルバイトしながら通えますか？<span class="plus"></span></div>
-      <div class="faq-answer">アルバイトが可能＝すでに就労する能力があるということになり、自治体によっては「利用する必要がない」と判断されることもあります。一度お問い合わせください。</div>
+    <div class="c-accordion__item">
+      <h2 class="c-accordion__title js-accordion__title">Q. アルバイトしながら通えますか？</h2>
+      <div class="c-accordion__body js-accordion__body">アルバイトが可能＝すでに就労する能力があるということになり、自治体によっては「利用する必要がない」と判断されることもあります。一度お問い合わせください。</div>
     </div>
+  </div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+$(function(){
+  $(".c-accordion__item:first-child .c-accordion__body").css("display","block")
+  $(".js-accordion__title").on("click",function(){
+    $(this).toggleClass("is-open");
+    $(this).next().slideToggle("is-open");
+  })
+})
+</script>
+
+
   </div>
   <div class="form">
   <div class="form-container">
