@@ -5,58 +5,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>rewrite LP</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
-<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
-
 </head>
 <body>
 <header>
-  <img src="img/logo.png" width="150px">
+  <img src="img/logo.png" width="300px">
   <nav class="menu">
-    <p>サービス</p>
-    <p>スキル・資格支援</p>
-    <p>利用者さんの声</p>
-    <p>利用までの流れ</p>
-    <p>よくある質問</p>
-    <p>お問い合わせ</p>
-    <p>アクセス</p>
+    <p><a href="#service">サービス</a></p>
+    <p><a href="#skill">スキル・資格支援</a></p>
+    <p><a href="#voice">利用者さんの声</a></p>
+    <p><a href="#flow">利用までの流れ</a></p>
+    <p><a href="#faq">よくある質問</a></p>
+    <p><a href="#form">お問い合わせ</a></p>
+    <p><a href="#access">アクセス</a></p>
   </nav>
+      <div class="logo"></div>
+    
+      <!-- ハンバーガーメニュー部分 -->
+      <div class="nav">
+    
+        <!-- ハンバーガーメニューの表示・非表示を切り替えるチェックボックス -->
+        <input id="drawer_input" class="drawer_hidden" type="checkbox">
+    
+        <!-- ハンバーガーアイコン -->
+        <label for="drawer_input" class="drawer_open"><span></span></label>
 </header>
 <main>
-  <div class="sliderArea">
-    <div class="regular slider">
+  <div class="slideshow" id="slideshow">
+    <div class="slides">
+      <div class="slide" aria-hidden="false">
       <div><img src="img/IMG_6013.jpg" width="100%"></div>
+      </div>
+      <div class="slide" aria-hidden="true">
       <div><img src="img/IMG_6018.jpg" width="100%"></div>
+      </div>
+      <div class="slide" aria-hidden="true">
       <div><img src="img/IMG_6021.jpg" width="100%"></div>
+      </div>
+      <div class="slide" aria-hidden="true">
       <div><img src="img/IMG_6026.jpg" width="100%"></div>
-      <div><img src="img/室内①.jpg" width="100%"></div>
-      <div><img src="img/北面.jpg" width="100%"></div>
+      </div>
+      <div class="slide" aria-hidden="true">
       <div><img src="img/面談室.jpeg" width="100%"></div>
+      </div>
     </div>
   </div>
 </main>
 
-<!-- jQuery -->
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
-<!-- slickのJS -->
-<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
-<!-- slickの初期化 -->
-<script>
-$(function(){
-  $('.regular').slick({
-    autoplay: true,        // 自動再生
-    autoplaySpeed: 3000,   // 3秒ごとに切り替え
-    dots: true,            // ドットナビゲーション
-    arrows: true,          // 前後の矢印
-    infinite: true,        // ループ
-    slidesToShow: 1,       // 表示枚数
-    slidesToScroll: 1      // スクロール枚数
-  });
-});
-</script>
+
     <div class="nuv1">
         <div class="question">
             <h1>働きたい、でもこんなお悩みありませんか？</h1>
@@ -65,14 +62,14 @@ $(function(){
         <div class="container">
             <img src="img/trouble_man_simple-1.png" width="300px">
 
-            <div class="thought top-left">体調に自信がない</div>
+            <div class="thought top-left">体調に<br>自信がない</div>
             <div class="thought bottom-left">IT未経験</div>
-            <div class="thought top-right">仕事が長く続かない</div>
+            <div class="thought top-right">仕事が長く<br>続かない</div>
             <div class="thought bottom-right">離職してから<br>ブランクがある</div>
         </div>
         </div>
     </div>
-    <div class="service">
+    <div class="service" id="service">
         <h1>ITに特化した就労移行支援サービス</h1>
         <p>株式会社rewriteでは、ITスキルの習得から就職活動、就職後の定着支援まで、一貫したサポートを提供しています。 一人ひとりの特性や希望に合わせたカリキュラムと、経験豊富なスタッフによる丁寧な指導で、IT分野での就労を目指す方をサポートします。</p>
     </div>
@@ -118,7 +115,7 @@ $(function(){
       </div>
     </div>
   </div>
-  <div class="skill">
+  <div class="skill" id="skill">
     <h1>スキル・資格支援</h1>
     <section class="skill_item">
       <h2>IT系スキル</h2>
@@ -154,17 +151,34 @@ $(function(){
       <p>ITパスポート試験</p>
   </section>
   </div>
-  <div class="voices">
+  <div class="voices" id="voice">
     <h1>利用者さんの声</h1>
       <div class="voice-container">
-        <div class="voice">
-          <div class="voice_icon"></div>
-            <p>テキスト</p>
-        </div>
-        <div class="voice">
-          <div class="voice_icon"></div>
-            <p>テキスト</p>
-        </div>
+        <section class="voice">
+          <img src="img/10199_color.png" width="30%"></img>
+            <h2>Q.通う前はどんな気持ちでしたか？</h2>
+            <p>就労移行を利用しようと思ったきっかけとしては、前職を退職してから、もう1回就職しようかと悩んでいた時に、以前も就労移行を利用していたので、もう一度利用できるなら利用したいと思いました。
+自己理解が圧倒的に不足していたので、講座などを通して学んでいきたかったことと、ITの仕事に就きたいと思い、IT特化型の就労移行を選びました。</p>
+<h2>Q.通い始めて何か変化はありましたか?</h2>
+<p>通い始めて、講座を受けて自分のことを知ることができ、自己理解が前よりも進められているかなと思っています。
+具体的には、興味関心がなかなか持てないという自分の性格や、現実と妄想の切り分けとして、自分がネガティブなことばかり考えてしまうのは、妄想だったんだなと思い、それって、そこまで気にしなくていいんだなと気づけるようになりました。
+今後は、もう少し自己理解を深めて、自分が何にストレスを受けているか等を理解したうえで、就職に向けて頑張っていきたいと思っています。</p>
+        </section>
+        <section class="voice">
+          <img src="img/10199_color2.png" width="30%"></img>
+            <h2>Q.通う前はどんな気持ちでしたか？</h2>
+            <p>前職の経験で落ち込んでいたり、体調を崩したこともあり、退職してからやる気が起きなくて、自室に引きこもっている状態でした。
+ほっといたらずっとこのままになりそうで、お金も稼がないといけないと思ったけれど、自分でモヤモヤがあったり色々なことを考えこみすぎたりして、動けませんでした。
+
+就労移行支援事業所があることを全く知らない中で、病気になって初めてそういう施設があることを知りました。
+見学をしてみて、利用者さんもスタッフさんも賑やかで、緊張していたけど、穏やかに挨拶をしてもらえてホッとしました。</p>
+<h2>Q.通い始めて何か変化はありましたか?</h2>
+<p>現在はパソコンの基礎の部分からやり始めていて、テキストも用意してあり、一つずつ確かめてやり方を確認しながら進めることができています。
+体験の時や利用初日とかは前日に緊張をしてしまい、眠れなくなってしまうことがありました。今もまったく緊張がないわけではないけれど、だんだん少しずつ慣れてきたという感覚はあります。
+
+今後、できたら正社員で働きたいと思っているものの、これをしたいという仕事をまだ描けていないので、
+何が向いていて、何が好きなのかをもっとはっきりさせていきながら、就職を目指していきたいと思っています。</p>
+        </section>
       </div>
   </div>
   <div class="data">
@@ -172,7 +186,7 @@ $(function(){
     <img src="img/スクリーンショット (17).png" width="100%">
     <p>※グループ会社ランプ浜松の実績より</p>
   </div>
-  <div class="flow">
+  <div class="flow" id="flow">
     <h1>利用までの流れ</h1>
     <div class="steps">
       <div class="step-wrap">
@@ -204,7 +218,7 @@ $(function(){
       </div>
     </div>
   </div>
-  <div class="faq-section">
+  <div class="faq-section" id="faq">
     <h1>よくある質問</h1>
 <div class="c-accordion">
   <div class="c-accordion__item">
@@ -238,7 +252,7 @@ $(function(){
 
 
   </div>
-  <div class="form">
+  <div class="form" id="form">
   <div class="form-container">
       <h1>お問い合わせフォーム</h1>
     <form action="#" method="post">
@@ -287,7 +301,7 @@ $(function(){
 
 
 
-<div class="access">
+<div class="access" id="access">
   <div class="access-section">
     <h1 class="section-title">アクセス</h1>
     <div class="access-content">
@@ -328,13 +342,13 @@ $(function(){
       <h4>リンク</h4>
       <ul>
         <li><a href="#">ホーム</a></li>
-        <li><a href="#">サービス</a></li>
-        <li><a href="#">スキル・資格支援</a></li>
-        <li><a href="#">利用者さんの声</a></li>
-        <li><a href="#">利用までの流れ</a></li>
-        <li><a href="#">よくある質問</a></li>
-        <li><a href="#">お問い合わせ</a></li>
-        <li><a href="#">アクセス</a></li>
+        <li><a href="#service">サービス</a></li>
+        <li><a href="#skill">スキル・資格支援</a></li>
+        <li><a href="#voice">利用者さんの声</a></li>
+        <li><a href="#flow">利用までの流れ</a></li>
+        <li><a href="#faq">よくある質問</a></li>
+        <li><a href="#form">お問い合わせ</a></li>
+        <li><a href="#access">アクセス</a></li>
       </ul>
     </div>
 
@@ -367,5 +381,6 @@ $(function(){
     setInterval(showNextSlide, 5000);
   });
 </script>
+<script src="script.js"></script>
 </body>
 </html>

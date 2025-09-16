@@ -16,7 +16,6 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 30px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
@@ -27,6 +26,7 @@ header {
 }
 
 header p {
+	font-size: 20px;
     margin: 10px;
     padding: 15px;
 }
@@ -35,21 +35,50 @@ main {
     position: relative;
 }
 
-.box::after {
-	content: "";
-	width: calc(100% - 10px);
-	height: calc(100% - 10px);
-	border-image-source: repeating-linear-gradient(45deg, #FF8800 0, #FF8800 2px, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0) 6px);
-	border-width: 15px;
-	border-image-slice: 20;
-	border-image-repeat: round;
-	border-style: solid;
-	position: absolute;
-	z-index: 1;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
+
+
+
+.slideshow {
+  position: relative;
+  width: 100%;
+  /* max-width: 900px; */
+  aspect-ratio: 16/9;
+  overflow: hidden;
+  margin-top: 100px;
 }
+
+.slides {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+.slide {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition: opacity 800ms ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.slide[aria-hidden="false"] {
+  opacity: 1;
+  z-index: 2;
+}
+
+
+
+
+
+
+
 
 
 
@@ -270,7 +299,6 @@ section {
 	display: flex;
 	justify-content: center;
 	gap: 300px;
-	flex-wrap: wrap;
 }
 
 .voice {
@@ -279,16 +307,14 @@ section {
 	align-items: center;
 }
 
-.voice_icon {
-	width: 80px;
-	height: 80px;
-	background-color: #ccc;
-	border-radius: 50%;
-	margin-bottom: 20px;
+.voice h2{
+	margin-top: 20px;
 }
-
 .voice p {
-	font-size: 18px;
+	font-size: 20px;
+	margin-top: -30px;
+	margin-left: 40px;
+	margin-right: 40px;
 }
 
 .data {
@@ -321,10 +347,12 @@ section {
 
 .step {
 	position: relative;
-	background-color: #fcd9a1;
 	padding: 100px 70px;
 	border-radius: 50px;
 	text-align: center;
+		border: 3px solid orange;
+	border-radius: 50px;
+	background-color: #FFFAFA;
 }
 
 .step img {
@@ -339,6 +367,7 @@ section {
 	transform: translateX(-50%);
 	font-weight: bold;
 	font-size: 20px;
+	margin-bottom: 40px;
 }
 .arrow{
 	font-size: 50px;
@@ -351,6 +380,7 @@ section {
   padding: 10px 20px;
   margin-bottom: 0;
   background-color: #FADBA1;
+  margin-top: 20px;
 }
 .c-accordion__title::before{
   content: "";
@@ -360,7 +390,7 @@ section {
   width: 10px;
   height: 2px;
   transform: rotate(90deg);
-  background: #efeeea;
+  background: #000000;
   transition: all .3s ease-in-out;
 }
 .c-accordion__title::after{
@@ -371,7 +401,7 @@ section {
   /*横線*/
   width: 10px;
   height: 2px;
-  background: #efeeea;
+  background: #000000;
   transition: all .2s ease-in-out;
 }
 /* オープンした時 */
@@ -385,7 +415,7 @@ section {
   display: none;
   font-size: 20px;
   padding: 10px 20px;
-  border: 1px solid #1c273e;
+  /* border: 1px solid #1c273e; */
 }
 /* .faq-item {
 	border-bottom: 1px solid #ccc;
@@ -612,12 +642,304 @@ button:hover {
   color: #ccc;
 }
 
-@media (max-width: 768px) {
-  .footer-container {
-    flex-direction: column;
+
+
+/* モバイル版（スマホ）対応 */
+@media screen and (max-width: 768px) {
+
+  header {
+    padding: 10px 20px;
   }
 
-  .footer-column {
-    margin-bottom: 20px;
+  .menu {
+    justify-content: center;
+    padding: 10px 0;
+  }
+
+  header p {
+    font-size: 16px;
+    padding: 10px;
+    margin: 5px 0;
+  }
+
+  .slideshow {
+    aspect-ratio: 4/3; /* スマホ用に縦長に調整 */
+    margin-top: 80px;
+  }
+
+  .container {
+    margin: 20px auto;
+  }
+
+  .thought {
+    width: 180px;
+    font-size: 18px;
+    padding: 30px 15px;
+  }
+
+  .section-container {
+    grid-template-columns: 1fr; /* カードを縦並びに */
+    gap: 20px;
+  }
+
+  .card_top-left,
+  .card_top-right,
+  .card_bottom-left,
+  .card_bottom-right {
+    max-width: 90%;
+    padding: 30px 20px;
+  }
+
+  .skill,
+  .service p,
+  .voice p,
+  .form-row {
+    font-size: 16px;
+  }
+
+  .voice-container {
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .steps {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .step {
+    padding: 50px 30px;
+  }
+
+  .access-content {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .access-map {
+    height: 200px;
+  }
+
+  .form-row {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  button {
+    width: 100%;
+  }
+
+  .faq-section {
+    padding: 20px;
+  }
+
+  .c-accordion__title {
+    font-size: 18px;
+    padding: 8px 15px;
+  }
+
+  .c-accordion__body {
+    font-size: 16px;
+  }
+
+  .site-footer {
+    text-align: center;
+    padding: 30px 15px;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    gap: 20px;
   }
 }
+
+/* ハンバーガーアイコン */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+}
+
+.hamburger span {
+  width: 25px;
+  height: 3px;
+  background-color: #000;
+  display: block;
+  transition: 0.3s;
+}
+
+@media screen and (max-width: 768px) {
+  .menu {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 80%;
+    max-width: 300px;
+    height: 100vh;
+    background-color: #fff;
+    flex-direction: column;
+    gap: 20px;
+    padding: 60px 20px 20px;  /* 上に余白を作って閉じるボタン分を確保 */
+    transition: right 0.3s ease;
+    box-shadow: -2px 0 5px rgba(0,0,0,0.1);
+    z-index: 9999;
+    overflow-y: auto;
+  }
+
+  .menu.show {
+    right: 0;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+  /* チェックボックスを非表示にする */
+.drawer_hidden {
+  display: none;
+}
+
+/* ハンバーガーアイコンの設置スペース */
+.drawer_open {
+  display: flex;
+  height: 60px;
+  width: 60px;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 100;/* 重なり順を一番上にする */
+  cursor: pointer;
+}
+
+/* ハンバーガーメニューのアイコン */
+.drawer_open span,
+.drawer_open span:before,
+.drawer_open span:after {
+  content: '';
+  display: block;
+  height: 3px;
+  width: 25px;
+  border-radius: 3px;
+  background: #333;
+  transition: 0.5s;
+  position: absolute;
+}
+
+/* 三本線の一番上の棒の位置調整 */
+.drawer_open span:before {
+  bottom: 8px;
+}
+
+/* 三本線の一番下の棒の位置調整 */
+.drawer_open span:after {
+  top: 8px;
+}
+
+/* アイコンがクリックされたら真ん中の線を透明にする */
+#drawer_input:checked ~ .drawer_open span {
+  background: rgba(255, 255, 255, 0);
+}
+
+/* アイコンがクリックされたらアイコンが×印になように上下の線を回転 */
+#drawer_input:checked ~ .drawer_open span::before {
+  bottom: 0;
+  transform: rotate(45deg);
+}
+
+#drawer_input:checked ~ .drawer_open span::after {
+  top: 0;
+  transform: rotate(-45deg);
+}
+  
+/* メニューのデザイン*/
+/* メニュー本体 */
+.nav_content {
+  width: 80%;             /* 画面幅の80%を使う（例） */
+  max-width: 300px;       /* PCでも最大300pxまで */
+  height: 100%;
+  position: fixed;
+  top: 0;
+  right: -100%;           /* 初期状態は画面の外（右側） */
+  z-index: 99;
+  background: #fff;
+  transition: right 0.5s ease; /* スライドアニメーション */
+  padding: 60px 20px;
+  box-shadow: -2px 0 5px rgba(0,0,0,0.1);
+  overflow-y: auto;
+}
+
+/* チェックが入ったら右端にスライドイン */
+#drawer_input:checked ~ .nav_content {
+  right: 0;  /* ← 右端に固定される */
+}
+
+/* メニューリストを縦に等間隔配置 */
+.nav_list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around; /* 縦に均等配置 */
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.nav_list li {
+  text-align: center;
+}
+
+.nav_list a {
+  display: block;
+  text-decoration: none;
+  font-size: 18px;
+  color: #333;
+  padding: 10px 0;
+}
+
+.container img{
+	width: 150px;
+}
+.top-left{
+	top: -50px;
+	left: -200px;
+}
+.bottom-left{
+	top: 100px;
+	left: -240px;
+}
+.top-right{
+	top: -50px;
+	right: -200px;
+}
+.bottom-right{
+	top: 80px;
+	right: -240px;
+}
+  .steps {
+    flex-direction: column; /* 縦並び */
+    gap: 40px;
+  }
+
+  .arrow {
+    transform: rotate(90deg); /* → を 90度回転させて ↓ に */
+}
+.step {
+  display: flex;
+  flex-direction: column;  /* 子要素を縦並びにする */
+  align-items: center;     /* 中央揃え */
+  text-align: center;
+}
+
+.step img {
+  display: block;          /* インライン要素の余白を消す */
+  max-width: 80px;         /* 好きなサイズに調整 */
+  height: auto;
+  margin-bottom: 10px;     /* 画像とテキストの間隔 */
+}
+
+.step p {
+  margin: 0;               /* 余計な margin をリセット */
+  font-size: 16px;
+}
+}
+
