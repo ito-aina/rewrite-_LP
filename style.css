@@ -35,13 +35,9 @@ main {
     position: relative;
 }
 
-
-
-
 .slideshow {
   position: relative;
   width: 100%;
-  /* max-width: 900px; */
   aspect-ratio: 16/9;
   overflow: hidden;
   margin-top: 100px;
@@ -62,32 +58,23 @@ main {
   align-items: center;
   justify-content: center;
 }
+
 .slide img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   display: block;
 }
+
 .slide[aria-hidden="false"] {
   opacity: 1;
   z-index: 2;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
 .nuv1 {
 	background-color: #FADBA1;
 }
+
 .question h1 {
 	text-align:center;
 	padding: 30px;
@@ -117,24 +104,40 @@ main {
 .top-left {
 	top: 50px;
 	left: -300px;
+      &:hover {
+        transform: scale(1.1, 1.1);
+        cursor: pointer;
+    }
 }
 
 .bottom-left {
 	top: 200px;
 	left: -500px;
+      &:hover {
+        transform: scale(1.1, 1.1);
+        cursor: pointer;
+    }
 }
 
 .top-right {
 	top: 50px;
 	right: -300px;
+      &:hover {
+        transform: scale(1.1, 1.1);
+        cursor: pointer;
+    }
 }
 
 .bottom-right {
 	top: 200px;
 	right: -500px;
+      &:hover {
+        transform: scale(1.1, 1.1);
+        cursor: pointer;
+    }
 }
 
-.question_list{
+.question_list {
 	text-align: center;
 }
 
@@ -169,7 +172,7 @@ body {
 
 .section-container {
 	display: grid;
-	gap: 20px;
+	gap: 40px;
 	justify-items: center;
 	grid-template-columns: repeat(2, 1fr);
 }
@@ -204,6 +207,10 @@ body {
 	flex-direction: column;
 	justify-content: space-between;
 	max-width: 300px;
+      &:hover {
+        transform: scale(1.1, 1.1);
+        cursor: pointer;
+    }
 }
 
 .card_top-right {
@@ -216,6 +223,10 @@ body {
 	flex-direction: column;
 	justify-content: space-between;
 	max-width: 300px;
+      &:hover {
+        transform: scale(1.1, 1.1);
+        cursor: pointer;
+    }
 	}
 
 .card_bottom-left {
@@ -228,6 +239,10 @@ body {
 	flex-direction: column;
 	justify-content: space-between;
 	max-width: 300px;
+      &:hover {
+        transform: scale(1.1, 1.1);
+        cursor: pointer;
+    }
 }
 
 .card_bottom-right {
@@ -240,6 +255,10 @@ body {
 	flex-direction: column;
 	justify-content: space-between;
 	max-width: 300px;
+      &:hover {
+        transform: scale(1.1, 1.1);
+        cursor: pointer;
+    }
 }
 
 .card .icon {
@@ -254,7 +273,6 @@ body {
 .card .text {
 	flex-grow: 1;
 }
-
 
 .skill {
 	line-height: 1.6;
@@ -274,6 +292,13 @@ section {
 	box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 	}
 
+  .skill-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin: 0 20px;
+}
+
 .skill_item h2 {
 	color: #ff8c00;
 	border-bottom: 1px solid #ccc;
@@ -282,6 +307,26 @@ section {
 
 .skill_item p {
 	font-size: 18px;
+}
+
+.skill_item_bottom-left h2 {
+  color: #ff8c00;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 5px;
+}
+
+.skill_item_bottom-left p {
+  font-size: 18px;
+}
+
+.skill_item_bottom-right h2 {
+  color: #ff8c00;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 5px;
+}
+
+.skill_item_bottom-right p {
+  font-size: 18px;
 }
 
 .voices {
@@ -307,14 +352,16 @@ section {
 	align-items: center;
 }
 
-.voice h2{
+.voice h2 {
 	margin-top: 20px;
 }
+
 .voice p {
 	font-size: 20px;
 	margin-top: -30px;
 	margin-left: 40px;
 	margin-right: 40px;
+  text-align: left;
 }
 
 .data {
@@ -331,7 +378,6 @@ section {
 	text-align: center;
 	padding: 50px 20px;
 }
-
 
 .steps {
 	display: flex;
@@ -353,6 +399,10 @@ section {
 		border: 3px solid orange;
 	border-radius: 50px;
 	background-color: #FFFAFA;
+      &:hover {
+        transform: scale(1.1, 1.1);
+        cursor: pointer;
+    }
 }
 
 .step img {
@@ -369,11 +419,12 @@ section {
 	font-size: 20px;
 	margin-bottom: 40px;
 }
+
 .arrow{
 	font-size: 50px;
 }
 
-.c-accordion__title{
+.c-accordion__title {
   position: relative;
   font-size: 20px;
   cursor: pointer;
@@ -382,7 +433,8 @@ section {
   background-color: #FADBA1;
   margin-top: 20px;
 }
-.c-accordion__title::before{
+
+.c-accordion__title::before {
   content: "";
   position: absolute;
   top: 50%;
@@ -393,7 +445,8 @@ section {
   background: #000000;
   transition: all .3s ease-in-out;
 }
-.c-accordion__title::after{
+
+.c-accordion__title::after {
   content: "";
   position: absolute;
   top: 50%;
@@ -404,55 +457,23 @@ section {
   background: #000000;
   transition: all .2s ease-in-out;
 }
+
 /* オープンした時 */
-.c-accordion__title.is-open::before{
+.c-accordion__title.is-open::before {
   transform: rotate(135deg);
 }
-.c-accordion__title.is-open::after{
+
+.c-accordion__title.is-open::after {
   transform: rotate(45deg);
 }
-.c-accordion__body{
+
+.c-accordion__body {
   display: none;
   font-size: 20px;
   padding: 10px 20px;
-  /* border: 1px solid #1c273e; */
-}
-/* .faq-item {
-	border-bottom: 1px solid #ccc;
-	padding: 15px 0;
-} */
-
-/* .faq-question {
-	background: none;
-	border: none;
-	width: 100%;
-	text-align: left;
-	font-size: 24px;
-	font-weight: bold;
-	cursor: pointer;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	padding-left: 30px;
-} */
-/* 
-.faq-answer {
-	display: none;
-	margin-top: 10px;
-	font-size: 24px;
-	color: #333;
-} */
-
-/* .faq-item.active .faq-answer {
-	display: block;
 }
 
-.faq-item.active .plus {
-	transform: rotate(45deg);
-} */
-
-
-.form{
+.form {
 	margin: 30px;
 }
 
@@ -520,11 +541,23 @@ button:hover {
 	background-color: darkorange;
 }
 
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea,
+select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  width: 100%; /* 横幅を揃える */
+  box-sizing: border-box; /* padding込みで幅を計算 */
+}
 
-
-.access{
+.access {
 	background-color: white;
 }
+
 .access-section {
 	padding: 40px 20px;
 	max-width: 1000px;
@@ -536,7 +569,6 @@ button:hover {
 	margin-bottom: 30px;
 	position: relative;
 }
-
 
 .access-content {
 	display: flex;
@@ -552,7 +584,7 @@ button:hover {
 	padding: 20px;
 	border-radius: 8px;
 	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-	}
+}
 
 .access-info h3 {
 	margin-top: 20px;
@@ -576,8 +608,6 @@ button:hover {
 	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-
-
 .site-footer {
   background-color: #2c3e50;
   color: #ffffff;
@@ -598,6 +628,7 @@ button:hover {
   flex: 1 1 200px;
   min-width: 200px;
 }
+
 .footer-column p {
 	font-size: 18px;
 }
@@ -641,8 +672,6 @@ button:hover {
   font-size: 12px;
   color: #ccc;
 }
-
-
 
 /* モバイル版（スマホ）対応 */
 @media screen and (max-width: 768px) {
@@ -751,6 +780,9 @@ button:hover {
     flex-direction: column;
     gap: 20px;
   }
+  .service h1{
+    font-size: 28px;
+  }
 }
 
 /* ハンバーガーアイコン */
@@ -795,126 +827,131 @@ button:hover {
     display: flex;
   }
   /* チェックボックスを非表示にする */
-.drawer_hidden {
-  display: none;
-}
+  .drawer_hidden {
+    display: none;
+  }
 
 /* ハンバーガーアイコンの設置スペース */
-.drawer_open {
-  display: flex;
-  height: 60px;
-  width: 60px;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  z-index: 100;/* 重なり順を一番上にする */
-  cursor: pointer;
-}
+  .drawer_open {
+    display: flex;
+    height: 60px;
+    width: 60px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 100;/* 重なり順を一番上にする */
+    cursor: pointer;
+  }
 
 /* ハンバーガーメニューのアイコン */
-.drawer_open span,
-.drawer_open span:before,
-.drawer_open span:after {
-  content: '';
-  display: block;
-  height: 3px;
-  width: 25px;
-  border-radius: 3px;
-  background: #333;
-  transition: 0.5s;
-  position: absolute;
-}
+  .drawer_open span,
+  .drawer_open span:before,
+  .drawer_open span:after {
+    content: '';
+    display: block;
+    height: 3px;
+    width: 25px;
+    border-radius: 3px;
+    background: #333;
+    transition: 0.5s;
+    position: absolute;
+  }
 
 /* 三本線の一番上の棒の位置調整 */
-.drawer_open span:before {
-  bottom: 8px;
-}
+  .drawer_open span:before {
+    bottom: 8px;
+  }
 
 /* 三本線の一番下の棒の位置調整 */
-.drawer_open span:after {
-  top: 8px;
-}
+  .drawer_open span:after {
+    top: 8px;
+  }
 
 /* アイコンがクリックされたら真ん中の線を透明にする */
-#drawer_input:checked ~ .drawer_open span {
-  background: rgba(255, 255, 255, 0);
-}
+  #drawer_input:checked ~ .drawer_open span {
+    background: rgba(255, 255, 255, 0);
+  }
 
 /* アイコンがクリックされたらアイコンが×印になように上下の線を回転 */
-#drawer_input:checked ~ .drawer_open span::before {
-  bottom: 0;
-  transform: rotate(45deg);
-}
+  #drawer_input:checked ~ .drawer_open span::before {
+    bottom: 0;
+    transform: rotate(45deg);
+  }
 
-#drawer_input:checked ~ .drawer_open span::after {
-  top: 0;
-  transform: rotate(-45deg);
-}
+  #drawer_input:checked ~ .drawer_open span::after {
+    top: 0;
+    transform: rotate(-45deg);
+  }
   
 /* メニューのデザイン*/
 /* メニュー本体 */
-.nav_content {
-  width: 80%;             /* 画面幅の80%を使う（例） */
-  max-width: 300px;       /* PCでも最大300pxまで */
-  height: 100%;
-  position: fixed;
-  top: 0;
-  right: -100%;           /* 初期状態は画面の外（右側） */
-  z-index: 99;
-  background: #fff;
-  transition: right 0.5s ease; /* スライドアニメーション */
-  padding: 60px 20px;
-  box-shadow: -2px 0 5px rgba(0,0,0,0.1);
-  overflow-y: auto;
-}
+  .nav_content {
+    width: 80%;             /* 画面幅の80%を使う（例） */
+    max-width: 300px;       /* PCでも最大300pxまで */
+    height: 100%;
+    position: fixed;
+    top: 0;
+    right: -100%;           /* 初期状態は画面の外（右側） */
+    z-index: 99;
+    background: #fff;
+    transition: right 0.5s ease; /* スライドアニメーション */
+    padding: 60px 20px;
+    box-shadow: -2px 0 5px rgba(0,0,0,0.1);
+    overflow-y: auto;
+  }
 
 /* チェックが入ったら右端にスライドイン */
-#drawer_input:checked ~ .nav_content {
-  right: 0;  /* ← 右端に固定される */
-}
+  #drawer_input:checked ~ .nav_content {
+    right: 0;  /* ← 右端に固定される */
+  }
 
 /* メニューリストを縦に等間隔配置 */
-.nav_list {
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around; /* 縦に均等配置 */
-  height: 100%;
-  margin: 0;
-  padding: 0;
-}
+  .nav_list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around; /* 縦に均等配置 */
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
 
-.nav_list li {
-  text-align: center;
-}
+  .nav_list li {
+    text-align: center;
+  }
 
-.nav_list a {
-  display: block;
-  text-decoration: none;
-  font-size: 18px;
-  color: #333;
-  padding: 10px 0;
-}
+  .nav_list a {
+    display: block;
+    text-decoration: none;
+    font-size: 18px;
+    color: #333;
+    padding: 10px 0;
+  }
 
-.container img{
-	width: 150px;
-}
-.top-left{
-	top: -50px;
-	left: -200px;
-}
-.bottom-left{
-	top: 100px;
-	left: -240px;
-}
-.top-right{
-	top: -50px;
-	right: -200px;
-}
-.bottom-right{
-	top: 80px;
-	right: -240px;
-}
+  .container img{
+    width: 150px;
+  }
+
+  .top-left{
+    top: -50px;
+    left: -200px;
+  }
+
+  .bottom-left{
+    top: 100px;
+    left: -240px;
+  }
+
+  .top-right{
+    top: -50px;
+    right: -200px;
+  }
+
+  .bottom-right{
+    top: 80px;
+    right: -240px;
+  }
+
   .steps {
     flex-direction: column; /* 縦並び */
     gap: 40px;
@@ -922,24 +959,57 @@ button:hover {
 
   .arrow {
     transform: rotate(90deg); /* → を 90度回転させて ↓ に */
+  }
+
+  .step {
+    display: flex;
+    flex-direction: column;  /* 子要素を縦並びにする */
+    align-items: center;     /* 中央揃え */
+    text-align: center;
+  }
+
+  .step img {
+    display: block;          /* インライン要素の余白を消す */
+    max-width: 80px;         /* 好きなサイズに調整 */
+    height: auto;
+    margin-bottom: 10px;     /* 画像とテキストの間隔 */
+  }
+
+  .step p {
+    margin: 0;               /* 余計な margin をリセット */
+    font-size: 16px;
+  }
 }
-.step {
+
+/* PC用メニュー（ハンバーガー非表示） */
+@media screen and (min-width: 769px) {
+  .nav_content {
+    display: none;
+  }
+}
+
+/* モバイル用メニュー（通常メニューを非表示） */
+@media screen and (max-width: 768px) {
+  .menu {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .drawer_hidden,
+  .drawer_open {
+    display: none !important;
+  }
+}
+.drawer_open {
   display: flex;
-  flex-direction: column;  /* 子要素を縦並びにする */
-  align-items: center;     /* 中央揃え */
-  text-align: center;
+  height: 60px;
+  width: 60px;
+  justify-content: center;
+  align-items: center;
+  position: absolute; /* ← fixed でも可 */
+  top: 20px;
+  right: 20px;
+  z-index: 100;
+  cursor: pointer;
 }
-
-.step img {
-  display: block;          /* インライン要素の余白を消す */
-  max-width: 80px;         /* 好きなサイズに調整 */
-  height: auto;
-  margin-bottom: 10px;     /* 画像とテキストの間隔 */
-}
-
-.step p {
-  margin: 0;               /* 余計な margin をリセット */
-  font-size: 16px;
-}
-}
-

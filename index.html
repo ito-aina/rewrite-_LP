@@ -10,6 +10,7 @@
 <header>
   <img src="img/logo.png" width="300px">
   <nav class="menu">
+    <p><a href="#">ホーム</a></p>
     <p><a href="#service">サービス</a></p>
     <p><a href="#skill">スキル・資格支援</a></p>
     <p><a href="#voice">利用者さんの声</a></p>
@@ -18,63 +19,65 @@
     <p><a href="#form">お問い合わせ</a></p>
     <p><a href="#access">アクセス</a></p>
   </nav>
-      <div class="logo"></div>
-    
-      <!-- ハンバーガーメニュー部分 -->
-      <div class="nav">
-    
-        <!-- ハンバーガーメニューの表示・非表示を切り替えるチェックボックス -->
-        <input id="drawer_input" class="drawer_hidden" type="checkbox">
-    
-        <!-- ハンバーガーアイコン -->
-        <label for="drawer_input" class="drawer_open"><span></span></label>
+  <!-- チェックボックスとラベル（ハンバーガーアイコン） -->
+  <input id="drawer_input" class="drawer_hidden" type="checkbox">
+  <label for="drawer_input" class="drawer_open"><span></span></label>
+
+<!-- スライドするメニュー本体 -->
+  <nav class="nav_content">
+    <ul class="nav_list">
+      <li><a href="#">ホーム</a></li>
+      <li><a href="#service">サービス</a></li>
+      <li><a href="#skill">スキル・資格支援</a></li>
+      <li><a href="#voice">利用者さんの声</a></li>
+      <li><a href="#flow">利用までの流れ</a></li>
+      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#form">お問い合わせ</a></li>
+      <li><a href="#access">アクセス</a></li>
+    </ul>
+  </nav>
+  <div class="logo"></div>
 </header>
 <main>
   <div class="slideshow" id="slideshow">
     <div class="slides">
       <div class="slide" aria-hidden="false">
-      <div><img src="img/IMG_6013.jpg" width="100%"></div>
+        <div><img src="img/IMG_6013.jpg" width="100%"></div>
       </div>
-      <div class="slide" aria-hidden="true">
+        <div class="slide" aria-hidden="true">
       <div><img src="img/IMG_6018.jpg" width="100%"></div>
       </div>
       <div class="slide" aria-hidden="true">
-      <div><img src="img/IMG_6021.jpg" width="100%"></div>
+        <div><img src="img/IMG_6021.jpg" width="100%"></div>
       </div>
       <div class="slide" aria-hidden="true">
-      <div><img src="img/IMG_6026.jpg" width="100%"></div>
+        <div><img src="img/IMG_6026.jpg" width="100%"></div>
       </div>
       <div class="slide" aria-hidden="true">
-      <div><img src="img/面談室.jpeg" width="100%"></div>
+        <div><img src="img/面談室.jpeg" width="100%"></div>
       </div>
     </div>
   </div>
 </main>
-
-
-
-
-    <div class="nuv1">
-        <div class="question">
-            <h1>働きたい、でもこんなお悩みありませんか？</h1>
-        </div>
-        <div class="question_list">
-        <div class="container">
-            <img src="img/trouble_man_simple-1.png" width="300px">
-
-            <div class="thought top-left">体調に<br>自信がない</div>
-            <div class="thought bottom-left">IT未経験</div>
-            <div class="thought top-right">仕事が長く<br>続かない</div>
-            <div class="thought bottom-right">離職してから<br>ブランクがある</div>
-        </div>
-        </div>
+  <div class="nuv1">
+    <div class="question">
+      <h1>働きたい、でもこんなお悩みありませんか？</h1>
     </div>
-    <div class="service" id="service">
-        <h1>ITに特化した就労移行支援サービス</h1>
-        <p>株式会社rewriteでは、ITスキルの習得から就職活動、就職後の定着支援まで、一貫したサポートを提供しています。 一人ひとりの特性や希望に合わせたカリキュラムと、経験豊富なスタッフによる丁寧な指導で、IT分野での就労を目指す方をサポートします。</p>
+    <div class="question_list">
+      <div class="container">
+        <img src="img/trouble_man_simple-1.png" width="300px">
+          <div class="thought top-left">体調に<br>自信がない</div>
+          <div class="thought bottom-left">IT未経験</div>
+          <div class="thought top-right">仕事が長く<br>続かない</div>
+          <div class="thought bottom-right">離職してから<br>ブランクがある</div>
+      </div>
     </div>
-
-      <div class="section-container">
+  </div>
+  <div class="service" id="service">
+    <h1>ITに特化した就労移行支援サービス</h1>
+    <p>株式会社rewriteでは、ITスキルの習得から就職活動、就職後の定着支援まで、一貫したサポートを提供しています。 一人ひとりの特性や希望に合わせたカリキュラムと、経験豊富なスタッフによる丁寧な指導で、IT分野での就労を目指す方をサポートします。</p>
+  </div>
+  <div class="section-container">
     <div class="card_top-left">
       <div class="icon">
         <img src="img/usingcomputer_man_simple.png" class="card_top-left_img">
@@ -84,7 +87,6 @@
         <p>chatGPT活用講座やGoogleワークスペース講座、MOSの取得など、実際の現場で活かせるPCスキルが習得できます。</p>
       </div>
     </div>
-
     <div class="card_top-right">
       <div class="icon">
         <img src="img/スクリーンショット (1).png" class="card_top-right_img">
@@ -94,7 +96,6 @@
         <p>独自のプログラミング学習カリキュラム（educure）で学習できます。現役エンジニアが在籍しているので、疑問や的確な質問もできます！</p>
       </div>
     </div>
-
     <div class="card_bottom-left">
       <div class="icon">
         <img src="img/2414_color.png" class="card_bottom-left_img">
@@ -104,7 +105,6 @@
         <p>「自宅でなら訓練できる」「リモートでの就職に備えてリモート訓練してみたい」など様々な理由からリモート訓練にも対応しています。</p>
       </div>
     </div>
-
     <div class="card_bottom-right">
       <div class="icon">
         <img src="img/meeting_02_simple.png" class="card_bottom-right_img">
@@ -117,39 +117,39 @@
   </div>
   <div class="skill" id="skill">
     <h1>スキル・資格支援</h1>
-    <section class="skill_item">
-      <h2>IT系スキル</h2>
+    <div class="skill-grid">
+    <!-- 上段3つ -->
+      <section class="skill_item">
+        <h2>IT系スキル</h2>
         <p>プログラミング（HTML、CSSなど）</p>
         <p>Web開発（WordPress）</p>
-    </section>
-
-    <section class="skill_item">
-      <h2>動画編集スキル</h2>
+      </section>
+      <section class="skill_item">
+        <h2>動画編集スキル</h2>
         <p>Adobe Premiere Pro</p>
-    </section>
-
-  <section class="skill_item">
-    <h2>デザインスキル</h2>
-      <p>Canva</p>
-      <p>Adobe Photoshop</p>
-      <p>Adobe Illustrator</p>
-  </section>
-
-  <section class="skill_item">
-    <h2>事務スキル</h2>
-      <p>MOS Excel</p>
-      <p>MOS Word</p>
-      <p>MOS PowerPoint</p>
-  </section>
-
-  <section class="skill_item">
-    <h2>資格</h2>
-      <p>MOSスペシャリスト</p>
-      <p>MOSエキスパート</p>
-      <p>Photoshop検定</p>
-      <p>Illustrator検定</p>
-      <p>ITパスポート試験</p>
-  </section>
+      </section>
+      <section class="skill_item">
+        <h2>デザインスキル</h2>
+        <p>Canva</p>
+        <p>Adobe Photoshop</p>
+        <p>Adobe Illustrator</p>
+      </section>
+    <!-- 下段2つ -->
+      <section class="skill_item_bottom-left">
+        <h2>事務スキル</h2>
+        <p>MOS Excel</p>
+        <p>MOS Word</p>
+        <p>MOS PowerPoint</p>
+      </section>
+      <section class="skill_item_bottom-right">
+        <h2>資格</h2>
+        <p>MOSスペシャリスト</p>
+        <p>MOSエキスパート</p>
+        <p>Photoshop検定</p>
+        <p>Illustrator検定</p>
+        <p>ITパスポート試験</p>
+      </section>
+    </div>
   </div>
   <div class="voices" id="voice">
     <h1>利用者さんの声</h1>
@@ -159,8 +159,8 @@
             <h2>Q.通う前はどんな気持ちでしたか？</h2>
             <p>就労移行を利用しようと思ったきっかけとしては、前職を退職してから、もう1回就職しようかと悩んでいた時に、以前も就労移行を利用していたので、もう一度利用できるなら利用したいと思いました。
 自己理解が圧倒的に不足していたので、講座などを通して学んでいきたかったことと、ITの仕事に就きたいと思い、IT特化型の就労移行を選びました。</p>
-<h2>Q.通い始めて何か変化はありましたか?</h2>
-<p>通い始めて、講座を受けて自分のことを知ることができ、自己理解が前よりも進められているかなと思っています。
+            <h2>Q.通い始めて何か変化はありましたか?</h2>
+            <p>通い始めて、講座を受けて自分のことを知ることができ、自己理解が前よりも進められているかなと思っています。
 具体的には、興味関心がなかなか持てないという自分の性格や、現実と妄想の切り分けとして、自分がネガティブなことばかり考えてしまうのは、妄想だったんだなと思い、それって、そこまで気にしなくていいんだなと気づけるようになりました。
 今後は、もう少し自己理解を深めて、自分が何にストレスを受けているか等を理解したうえで、就職に向けて頑張っていきたいと思っています。</p>
         </section>
@@ -169,13 +169,11 @@
             <h2>Q.通う前はどんな気持ちでしたか？</h2>
             <p>前職の経験で落ち込んでいたり、体調を崩したこともあり、退職してからやる気が起きなくて、自室に引きこもっている状態でした。
 ほっといたらずっとこのままになりそうで、お金も稼がないといけないと思ったけれど、自分でモヤモヤがあったり色々なことを考えこみすぎたりして、動けませんでした。
-
 就労移行支援事業所があることを全く知らない中で、病気になって初めてそういう施設があることを知りました。
 見学をしてみて、利用者さんもスタッフさんも賑やかで、緊張していたけど、穏やかに挨拶をしてもらえてホッとしました。</p>
-<h2>Q.通い始めて何か変化はありましたか?</h2>
-<p>現在はパソコンの基礎の部分からやり始めていて、テキストも用意してあり、一つずつ確かめてやり方を確認しながら進めることができています。
+            <h2>Q.通い始めて何か変化はありましたか?</h2>
+            <p>現在はパソコンの基礎の部分からやり始めていて、テキストも用意してあり、一つずつ確かめてやり方を確認しながら進めることができています。
 体験の時や利用初日とかは前日に緊張をしてしまい、眠れなくなってしまうことがありました。今もまったく緊張がないわけではないけれど、だんだん少しずつ慣れてきたという感覚はあります。
-
 今後、できたら正社員で働きたいと思っているものの、これをしたいという仕事をまだ描けていないので、
 何が向いていて、何が好きなのかをもっとはっきりさせていきながら、就職を目指していきたいと思っています。</p>
         </section>
@@ -183,61 +181,61 @@
   </div>
   <div class="data">
     <h1>通所者データ</h1>
-    <img src="img/スクリーンショット (17).png" width="100%">
+    <img src="img/名称未設定のデザイン.png" width="100%">
     <p>※グループ会社ランプ浜松の実績より</p>
   </div>
   <div class="flow" id="flow">
     <h1>利用までの流れ</h1>
-    <div class="steps">
-      <div class="step-wrap">
-        <div class="step">
-          <img src="img/メールの無料アイコンその8.png" alt="">
-          <p>お問い合わせ</p>
+      <div class="steps">
+        <div class="step-wrap">
+          <div class="step">
+            <img src="img/メールの無料アイコンその8.png" alt="">
+            <p>お問い合わせ</p>
+          </div>
         </div>
-      </div>
       <div class="arrow">→</div>
-      <div class="step-wrap">
-        <div class="step">
-          <img src="img/ノートPCアイコン.png" alt="">
-          <p>見学・体験</p>
+        <div class="step-wrap">
+          <div class="step">
+            <img src="img/ノートPCアイコン.png" alt="">
+            <p>見学・体験</p>
+          </div>
         </div>
-      </div>
       <div class="arrow">→</div>
-      <div class="step-wrap">
-        <div class="step">
-          <img src="img/メモアイコン.png" alt="">
-          <p>利用手続き</p>
+        <div class="step-wrap">
+          <div class="step">
+            <img src="img/メモアイコン.png" alt="">
+            <p>利用手続き</p>
+          </div>
         </div>
-      </div>
       <div class="arrow">→</div>
-      <div class="step-wrap">
-        <div class="step">
-          <img src="img/9614.png" alt="">
-          <p>利用開始</p>
+        <div class="step-wrap">
+          <div class="step">
+            <img src="img/9614.png" alt="">
+            <p>利用開始</p>
+          </div>
         </div>
       </div>
-    </div>
   </div>
   <div class="faq-section" id="faq">
     <h1>よくある質問</h1>
-<div class="c-accordion">
-  <div class="c-accordion__item">
-      <h2 class="c-accordion__title js-accordion__title is-open">Q. 障害者手帳がなくても通えますか？</h2>
-      <div class="c-accordion__body js-accordion__body">はい、医師の診断書があれば障害者手帳は不要です。なお相談時点では診断書がなくてもかまいませんのでお気軽にお問い合わせください。</div>
+    <div class="c-accordion">
+      <div class="c-accordion__item">
+        <h2 class="c-accordion__title js-accordion__title is-open">Q. 障害者手帳がなくても通えますか？</h2>
+          <div class="c-accordion__body js-accordion__body">はい、医師の診断書があれば障害者手帳は不要です。なお相談時点では診断書がなくてもかまいませんのでお気軽にお問い合わせください。</div>
+      </div>
+      <div class="c-accordion__item">
+        <h2 class="c-accordion__title js-accordion__title">Q. 会社を休職中ですが利用できますか？</h2>
+        <div class="c-accordion__body js-accordion__body">いくつか条件はございますが会社に籍をおいたまま利用されている方もいます。</div>
+      </div>
+      <div class="c-accordion__item">
+        <h2 class="c-accordion__title js-accordion__title">Q. 学校に通いながら通所できますか？</h2>
+        <div class="c-accordion__body js-accordion__body">就労移行支援は18歳以上が対象のため、高校在学中に就労移行支援事業所を利用することはできません。在籍中でも体験は可能です。</div>
+      </div>
+      <div class="c-accordion__item">
+        <h2 class="c-accordion__title js-accordion__title">Q. アルバイトしながら通えますか？</h2>
+        <div class="c-accordion__body js-accordion__body">アルバイトが可能＝すでに就労する能力があるということになり、自治体によっては「利用する必要がない」と判断されることもあります。一度お問い合わせください。</div>
+      </div>
     </div>
-    <div class="c-accordion__item">
-      <h2 class="c-accordion__title js-accordion__title">Q. 会社を休職中ですが利用できますか？</h2>
-      <div class="c-accordion__body js-accordion__body">いくつか条件はございますが会社に籍をおいたまま利用されている方もいます。</div>
-    </div>
-    <div class="c-accordion__item">
-      <h2 class="c-accordion__title js-accordion__title">Q. 学校に通いながら通所できますか？</h2>
-      <div class="c-accordion__body js-accordion__body">就労移行支援は18歳以上が対象のため、高校在学中に就労移行支援事業所を利用することはできません。在籍中でも体験は可能です。</div>
-    </div>
-    <div class="c-accordion__item">
-      <h2 class="c-accordion__title js-accordion__title">Q. アルバイトしながら通えますか？</h2>
-      <div class="c-accordion__body js-accordion__body">アルバイトが可能＝すでに就労する能力があるということになり、自治体によっては「利用する必要がない」と判断されることもあります。一度お問い合わせください。</div>
-    </div>
-  </div>
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script>
@@ -250,35 +248,41 @@ $(function(){
 })
 </script>
 
-
   </div>
   <div class="form" id="form">
-  <div class="form-container">
+    <div class="form-container">
       <h1>お問い合わせフォーム</h1>
-    <form action="#" method="post">
-      <div class="form-row">
-        <div class="form-group">
-          <label for="name">お名前*</label>
-          <input type="text" id="name" name="name" required>
+      <form action="#" method="post">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="name">お名前*</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          <div class="form-group">
+            <label for="kana">フリガナ</label>
+            <input type="text" id="kana" name="kana">
+          </div>
         </div>
-        <div class="form-group">
-          <label for="kana">フリガナ</label>
-          <input type="text" id="kana" name="kana">
-        </div>
-      </div>
-      <div class="form-row">
-        <div class="form-group">
-          <label for="email">メールアドレス*</label>
-          <input type="email" id="email" name="email" required>
-        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="email">メールアドレス*</label>
+            <input type="email" id="email" name="email" required>
+          </div>
         <div class="form-group">
           <label for="tel">電話番号</label>
           <input type="tel" id="tel" name="tel">
         </div>
       </div>
       <div class="form-group full-width">
-        <label for="type">お問い合わせ種別*</label>
-        <input type="text" id="type" name="type" required>
+        <label for="inquiry">お問い合わせ種別</label>
+          <select id="inquiry" name="inquiry" required>
+            <option value="">選択してください</option>
+            <option value="visit">見学・体験利用</option>
+            <option value="service">サービスについて</option>
+            <option value="use">利用について</option>
+            <option value="business">企業の方</option>
+            <option value="other">その他</option>
+          </select>
       </div>
       <div class="form-group full-width">
         <label for="subject">件名</label>
@@ -290,82 +294,74 @@ $(function(){
       </div>
       <div class="checkbox">
         <input type="checkbox" id="agree" name="agree" required>
-        <label for="agree">プライバシーポリシーに同意します *</label>
+        <label for="agree">
+          <a href="https://rewrite-c.co.jp/privacy" target="_blank" rel="noopener noreferrer">
+            プライバシーポリシー
+          </a>
+          に同意します *
+        </label>
       </div>
       <div class="button">
         <button type="submit">確認</button>
       </div>
-      </div>
+    </div>
     </form>
   </div>
-
-
-
-<div class="access" id="access">
-  <div class="access-section">
-    <h1 class="section-title">アクセス</h1>
-    <div class="access-content">
-      <div class="access-info">
-        <h3>所在地</h3>
-        <p>〒430-0926 静岡県浜松市中区砂山町355-1 ナイスビル2F</p>
-
-        <h3>アクセス方法</h3>
-        <ul>
-          <li>JR浜松駅南口から徒歩５分</li>
-          <li>遠州鉄道 新浜松駅から徒歩８分</li>
-        </ul>
-
-        <h3>営業時間</h3>
-        <p>平日 9:00〜18:00（土日祝休み）</p>
-      </div>
-
-      <div class="access-map">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d820.0289765375658!2d137.73543807581757!3d34.70225639649552!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x601adf74e4f37c5b%3A0xa0636544716b69e0!2z5bCx5Yq056e76KGM5pSv5o-05LqL5qWt5omAIOODquODqeOCpOODiOOCreODo-ODs-ODkeOCuea1nOadvumnheWNlw!5e0!3m2!1sja!2sjp!4v1757639357126!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-      </div>
+  <div class="access" id="access">
+    <div class="access-section">
+      <h1 class="section-title">アクセス</h1>
+        <div class="access-content">
+          <div class="access-info">
+            <h3>所在地</h3>
+            <p>〒430-0926 静岡県浜松市中区砂山町355-1 ナイスビル2F</p>
+            <h3>アクセス方法</h3>
+            <ul>
+              <li>JR浜松駅南口から徒歩４分</li>
+              <li>遠州鉄道 新浜松駅から徒歩８分</li>
+            </ul>
+            <h3>営業時間</h3>
+            <p>9:00〜18:00（土日・年末年始を除く）</p>
+          </div>
+          <div class="access-map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d820.0289765375658!2d137.73543807581757!3d34.70225639649552!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x601adf74e4f37c5b%3A0xa0636544716b69e0!2z5bCx5Yq056e76KGM5pSv5o-05LqL5qWt5omAIOODquODqeOCpOODiOOCreODo-ODs-ODkeOCuea1nOadvumnheWNlw!5e0!3m2!1sja!2sjp!4v1757639357126!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
     </div>
   </div>
-</div>
-
-<footer class="site-footer">
-  <div class="footer-container">
-    <!-- 左：会社概要 -->
-    <div class="footer-column">
-      <h3 class="footer-logo">rewrite</h3>
-      <p>
-        株式会社rewriteは、ITに特化した人的支援事業を展開しています。<br>
-        一人ひとりが自らの未来を切り開く社会を実現するために、ITのチカラで地域の未来を支えます。
-      </p>
-    </div>
-
+  <footer class="site-footer">
+    <div class="footer-container">
+      <!-- 左：会社概要 -->
+        <div class="footer-column">
+          <h3 class="footer-logo">rewrite</h3>
+          <p>株式会社rewriteは、ITに特化した人的支援事業を展開しています。<br>一人ひとりが自らの未来を切り開く社会を実現するために、ITのチカラで地域の未来を支えます。</p>
+        </div>
     <!-- 中左：リンク -->
-    <div class="footer-column">
-      <h4>リンク</h4>
-      <ul>
-        <li><a href="#">ホーム</a></li>
-        <li><a href="#service">サービス</a></li>
-        <li><a href="#skill">スキル・資格支援</a></li>
-        <li><a href="#voice">利用者さんの声</a></li>
-        <li><a href="#flow">利用までの流れ</a></li>
-        <li><a href="#faq">よくある質問</a></li>
-        <li><a href="#form">お問い合わせ</a></li>
-        <li><a href="#access">アクセス</a></li>
-      </ul>
-    </div>
-
+      <div class="footer-column">
+        <h4>リンク</h4>
+        <ul>
+          <li><a href="#">ホーム</a></li>
+          <li><a href="#service">サービス</a></li>
+          <li><a href="#skill">スキル・資格支援</a></li>
+          <li><a href="#voice">利用者さんの声</a></li>
+          <li><a href="#flow">利用までの流れ</a></li>
+          <li><a href="#faq">よくある質問</a></li>
+          <li><a href="#form">お問い合わせ</a></li>
+          <li><a href="#access">アクセス</a></li>
+        </ul>
+      </div>
     <!-- 右：お問い合わせ -->
-    <div class="footer-column">
-      <h4>お問い合わせ</h4>
-      <p>〒430-0926 静岡県浜松市中区砂山町355-1<br>ケイスビル2F</p>
-      <p> 053-401-0004</p>
-      <p><a href="mailto:info@rewrite-co.jp">info@rewrite-co.jp</a></p>
+      <div class="footer-column">
+        <h4>お問い合わせ</h4>
+        <p>〒430-0926 静岡県浜松市中区砂山町355-1<br>ケイスビル2F</p>
+        <p> 053-401-0004</p>
+        <p><a href="mailto:info@rewrite-co.jp">info@rewrite-co.jp</a></p>
+      </div>
     </div>
-  </div>
-
   <!-- コピーライト -->
-  <div class="footer-bottom">
-    <p>&copy; 2025 株式会社rewrite All Rights Reserved.</p>
-  </div>
-</footer>
+      <div class="footer-bottom">
+        <p>&copy; 2025 株式会社rewrite All Rights Reserved.</p>
+      </div>
+  </footer>
 <script>
   document.addEventListener('DOMContentLoaded', () => {
     const slides = document.querySelectorAll('.slide');
